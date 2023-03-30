@@ -7,6 +7,12 @@ import { Provider as RWBProvider } from "react-wrap-balancer";
 import cx from "classnames";
 import localFont from "@next/font/local";
 import { Inter } from "@next/font/google";
+import Link from "next/link";
+import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
+import { FADE_IN_ANIMATION_SETTINGS } from "@/lib/constants";
+import UserDropdown from "@/components/layout/user-dropdown";
+import Navbar from "@/components/navbar";
 
 const sfPro = localFont({
   src: "../styles/SF-Pro-Display-Medium.otf",
@@ -25,8 +31,11 @@ export default function MyApp({
   return (
     <SessionProvider session={session}>
       <RWBProvider>
+        <Navbar />
         <div className={cx(sfPro.variable, inter.variable)}>
-          <Component {...pageProps} />
+          <main className="w-f ull flex flex-col items-center justify-center bg-black py-32">
+            <Component {...pageProps} />
+          </main>
         </div>
       </RWBProvider>
       <Analytics />

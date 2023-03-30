@@ -2,15 +2,19 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  future: {
-    hoverOnlyWhenSupported: true,
-  },
+  // future: {
+  //   hoverOnlyWhenSupported: true,
+  // },
   theme: {
     extend: {
+      width: {
+        xd: "640px",
+      },
       fontFamily: {
         display: ["var(--font-sf)", "system-ui", "sans-serif"],
         default: ["var(--font-inter)", "system-ui", "sans-serif"],
