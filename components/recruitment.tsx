@@ -11,10 +11,10 @@ const Recruitment = () => {
         "py-9 px-4 md:py-12 md:px-6 lg:py-16 lg:px-20 2xl:container 2xl:mx-auto"
       }
     >
-      <h1 className="pb-4 text-3xl font-bold leading-9 text-gray-100 lg:text-4xl">
+      <h1 className="pb-4 text-3xl font-bold leading-9 text-gray-100 sm:pb-16 lg:text-4xl">
         Rekrutacja
       </h1>
-      <p className="mt-16 mb-8  text-justify text-white md:mb-16 md:text-2xl ">
+      <p className="mb-8  text-justify text-white md:mb-16 md:text-2xl ">
         Dołącz do naszego zespołu i miej wpływ na przyszłość! Szukamy ambitnych
         i zdeterminowanych osób, które chcą się rozwijać i tworzyć nowe
         rozwiązania. Wypełnij naszą ankietę, aby poznać nas lepiej i pokazać
