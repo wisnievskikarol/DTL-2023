@@ -7,10 +7,7 @@ import { Github, Twitter } from "@/components/shared/icons";
 import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
-import AboutUs from "@/components/about-us";
-import GridList from "@/components/grid-list/grid-list";
-import Contact from "@/components/contact";
-import Recruitment from "@/components/recruitment";
+
 
 export default function Home() {
   return (
@@ -48,12 +45,6 @@ export default function Home() {
           >
           </motion.div>
         </div>
-        <AboutUs />
-        <GridList />
-        <Recruitment />
-        <Contact />
+      
       </motion.div>
-    </>
-  );
-}
-0
+];
