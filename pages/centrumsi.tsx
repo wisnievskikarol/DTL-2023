@@ -1,12 +1,8 @@
-import Card from "@/components/home/card";
-import Layout from "@/components/layout";
-import Balancer from "react-wrap-balancer";
 import { motion } from "framer-motion";
-import { DEPLOY_URL, FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
-import { Github, Twitter } from "@/components/shared/icons";
-import WebVitals from "@/components/home/web-vitals";
-import ComponentGrid from "@/components/home/component-grid";
-import Image from "next/image";
+import Balancer from "react-wrap-balancer";
+import { FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
+import Footer from "@/components/footer";
+import Card from "@/components/home/card";
 
 export default function Home() {
   return (
@@ -25,26 +21,20 @@ export default function Home() {
           },
         }}
       >
-        <div className={"py-8 md:py-64"}>
+      <div className="py-8 md-64 main-div" style={{ maxWidth: "94%", margin: "0 auto" }}>
           <motion.h1
-            className=" bg-gradient-to-br from-black to-green-500  bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
+            className=" bg-gradient-to-br from-black to-green-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            <Balancer>Niebieski ocean</Balancer>
+            <Balancer>Centrum Sztucznej Inteligencji</Balancer>
           </motion.h1>
-          <motion.p
-            className="mt-6 text-center text-gray-500 md:text-xl"
-            variants={FADE_DOWN_ANIMATION_VARIANTS}
-          >
-            <Balancer>Nasze technologie. Twoja przewaga.</Balancer>
-          </motion.p>
-          <motion.div
-            className="mx-auto mt-6 flex items-center justify-center space-x-5"
-            variants={FADE_DOWN_ANIMATION_VARIANTS}
-          >
-          </motion.div>
+          <div className="text-center text-gray-500 mt-16 md:text-xl">
+            Centum SI to społeczność stawiająca sobie za cel aktywizację studentów i młodzieży lubelskich uczelni oraz szkół w celu badań i pogłębiania wiedzy z dziedziny sztucznej inteligencji. Jego realizacja obejmuje badania naukowe (tak zwany research) branży i dziedziny szeroko rozumianej sztucznej inteligencji, organizowanie warsztatów, tworzenie i publikowanie artykułów naukowych, prowadzenie kanałów naukowych oraz prezentowanie się na konferencjach, a w przyszłości także badania nad technicznymi aspektami SI. Chcemy zainspirować młodzież do aktywnego rozwoju w tej dziedzinie, pokazać im jednocześnie w jaki sposób prowadzone są działania biznesowe i cykle technologiczne, chcemy promować naukę i technologię oraz popularyzować sztuczną inteligencję wśród społeczności lokalnej, budować świadomość i kapitał intelektualny.
+          </div>
+          <Card />
         </div>
       </motion.div>
+      <Footer />
     </>
   );
 }

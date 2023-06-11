@@ -1,5 +1,3 @@
-import Card from "@/components/home/card";
-import Layout from "@/components/layout";
 import Balancer from "react-wrap-balancer";
 import { motion } from "framer-motion";
 import { DEPLOY_URL, FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
@@ -11,6 +9,8 @@ import AboutUs from "@/components/about-us";
 import GridList from "@/components/grid-list/grid-list";
 import Contact from "@/components/contact";
 import Recruitment from "@/components/recruitment";
+import Footer from "@/components/footer";
+
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
       >
         <div className={"py-8 md:py-64"}>
           <motion.h1
-            className=" bg-gradient-to-br from-black to-green-500  bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
+            className=" bg-gradient-to-br from-black to-#08fc9c  bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
             <Balancer>Niebieski ocean</Balancer>
@@ -51,7 +51,7 @@ export default function Home() {
         <AboutUs />
         <GridList />
         <Recruitment />
-        <Contact />
+        <Footer />
       </motion.div>
     </>
   );
