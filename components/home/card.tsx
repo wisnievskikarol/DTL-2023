@@ -1,56 +1,57 @@
-import { ReactNode } from "react";
-import ReactMarkdown from "react-markdown";
-import Balancer from "react-wrap-balancer";
+import React from "react";
+import Link from "next/link";
 
-export default function Card({
-  title,
-  description,
-  demo,
-  large,
-}: {
-  title: string;
-  description: string;
-  demo: ReactNode;
-  large?: boolean;
-}) {
+const Card = () => {
   return (
-    <div
-      className={`relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md ${
-        large ? "md:col-span-2" : ""
-      }`}
-    >
-      <div className="flex h-60 items-center justify-center">{demo}</div>
-      <div className="mx-auto max-w-md text-center">
-        <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent md:text-3xl md:font-normal">
-          <Balancer>{title}</Balancer>
-        </h2>
-        <div className="prose-sm -mt-2 leading-normal text-gray-500 md:prose">
-          <Balancer>
-            <ReactMarkdown
-              components={{
-                a: ({ node, ...props }) => (
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    {...props}
-                    className="font-medium text-gray-800 underline transition-colors"
-                  />
-                ),
-                code: ({ node, ...props }) => (
-                  <code
-                    {...props}
-                    // @ts-ignore (to fix "Received `true` for a non-boolean attribute `inline`." warning)
-                    inline="true"
-                    className="rounded-sm bg-gray-100 px-1 py-0.5 font-mono font-medium text-gray-800"
-                  />
-                ),
-              }}
-            >
-              {description}
-            </ReactMarkdown>
-          </Balancer>
-        </div>
+    <div className="card-container">
+      <div className="card">
+        <Link href="/site">
+          <button className="card-button">site</button>
+        </Link>
       </div>
+      <div className="card">
+        <Link href="/site">
+          <button className="card-button">site</button>
+        </Link>
+      </div>
+      <div className="card">
+        <Link href="/site">
+          <button className="card-button">site</button>
+        </Link>
+      </div>
+      <style jsx>{`
+        .card-container {
+          display: flex;
+          width: 96%;
+          margin: 0 auto;
+        }
+        .card {
+          margin-top: 64px;
+          flex: 1;
+          height: 200px;
+          border-radius: 8px;
+          border: 5px solid #08fc9c;
+          background-color: #212121;
+          margin-right: 2%;
+          margin-left: 2%;
+          width: 30%;
+        }
+        .card-button {
+          width: 100%;
+          height: 100%;
+          border: none;
+          background-color: transparent;
+          color: #08fc9c;
+          font-size: 18px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      `}</style>
     </div>
   );
-}
+};
+
+export default Card;

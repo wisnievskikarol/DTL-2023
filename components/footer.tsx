@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <div className="footer-container">
+    <div className="footer-container max-w-8xl">
       <div className="footer-section">
         <img src="/logo.svg" alt="Logo" width="200px" />
         <div className="social-media-links">
@@ -35,6 +35,7 @@ const Footer: React.FC = () => {
         .footer-container {
           display: flex;
           width: 96%;
+          padding: 2%;
         }
 
         .footer-section {
