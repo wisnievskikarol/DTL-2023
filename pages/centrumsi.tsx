@@ -8,7 +8,6 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 
-
 export default function Home() {
   return (
     <>
@@ -45,6 +44,7 @@ export default function Home() {
           >
           </motion.div>
         </div>
-      
       </motion.div>
-];
+    </>
+  );
+}

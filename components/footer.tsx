@@ -3,32 +3,69 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <div className="footer-container">
-      <div className="logo-section">
-        <img src="/logo.png" alt="Logo" />
+      <div className="footer-section">
+        <img src="/logo.svg" alt="Logo" width="200px" />
         <div className="social-media-links">
           <a href="https://example.com/social-link1" target="_blank" rel="noopener noreferrer">
-            <img src="/social-link1.png" alt="Social Link 1" />
+            <img src="/discord.png" alt="Social Link 1" width="25px" />
           </a>
           <a href="https://example.com/social-link2" target="_blank" rel="noopener noreferrer">
-            <img src="/social-link2.png" alt="Social Link 2" />
+            <img src="/li.png" alt="Social Link 2" width="25px" />
           </a>
           <a href="https://example.com/social-link3" target="_blank" rel="noopener noreferrer">
-            <img src="/social-link3.png" alt="Social Link 3" />
+            <img src="/fb.png" alt="Social Link 3" width="25px" />
+          </a>
+          <a href="https://example.com/social-link3" target="_blank" rel="noopener noreferrer">
+            <img src="/tt.png" alt="Social Link 3" width="25px" />
+          </a>
+          <a href="https://example.com/social-link3" target="_blank" rel="noopener noreferrer">
+            <img src="/yt.png" alt="Social Link 3" width="25px" />
+          </a>
+          <a href="https://example.com/social-link3" target="_blank" rel="noopener noreferrer">
+            <img src="/notion.png" alt="Social Link 3" width="25px" />
           </a>
         </div>
+        <p className="contact-text align-right text-gray-500">kontakt@deeptechlabs.pl</p>
       </div>
-      <div className="vertical-line"></div>
-      <div className="section">Section 1</div>
-      <div className="vertical-line"></div>
-      <div className="section">Section 2</div>
-      <div className="vertical-line"></div>
-      <div className="section">Section 3</div>
-      <div className="vertical-line"></div>
-      <div className="links-section">
-        <a href="https://example.com/link1">Link 1</a>
-        <a href="https://example.com/link2">Link 2</a>
-        <a href="https://example.com/link3">Link 3</a>
-      </div>
+      <div className="footer-section align-right text-gray-500"></div>
+      <div className="footer-section align-right text-gray-500"></div>
+      <div className="footer-section align-right text-gray-500"></div>
+
+      <style jsx>{`
+        .footer-container {
+          display: flex;
+          width: 96%;
+        }
+
+        .footer-section {
+          width: 25%;
+          padding: 5px;
+        }
+
+        .align-right {
+          text-align: right;
+        }
+
+        .social-media-links {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 10px;
+        }
+
+        .social-media-links a {
+          margin-right: 10px;
+        }
+
+        .social-media-links img {
+          width: 25px;
+        }
+
+        .contact-text {
+          margin-top: 30px;
+          text-align: left;
+          color: gray-500;
+        }
+      `}</style>
     </div>
   );
 };

@@ -30,7 +30,7 @@ const Recruitment = () => {
           <Link
             href={`https://docs.google.com/forms/d/e/1FAIpQLSc13xXDc_4P-HB9YKJlNf1FJTy5ILxON9EwPJJrzeswtYSMxA/viewform?usp=sf_link`}
             target="_blank"
-          >
+            legacyBehavior>
             <button
               type="button"
               className="mt-2 mb-2 rounded-full bg-white px-8 py-3 text-center text-sm font-medium text-black hover:bg-gray-400 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"

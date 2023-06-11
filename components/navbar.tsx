@@ -18,33 +18,47 @@ const Navbar = () => {
         <div className="flex h-16 w-full items-center justify-between">
           <div className="flex w-full items-center justify-between">
             <div className="flex-shrink-0">
-              <img
-                src="logo.svg"
-                className="mr-3 h-9 sm:h-9"
-                alt="Deeptechlabs Logo"
-              />
+              <Link href="/">
+                <button className="mr-3 h-9 sm:h-9 cursor-pointer focus:outline-none">
+                  <img
+                    src="logo.svg"
+                    className="h-full"
+                    alt="Deeptechlabs Logo"
+                  />
+                </button>
+              </Link>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="#Onas" passHref>
-                  <a className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
-                    O nas
-                  </a>
+                <Link href="/lanchpad">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                    Lanchpad
+                  </button>
                 </Link>
-                <Link href="#Uslugi" passHref>
-                  <a className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
-                    Usługi
-                  </a>
+                <Link href="/centrumsi">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                    Centrum SI
+                  </button>
                 </Link>
-                <Link href="#Rekrutacja" passHref>
-                  <a className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                <Link href="/rekrutacja">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
                     Rekrutacja
-                  </a>
+                  </button>
                 </Link>
-                <Link href="#Kontakt" passHref>
-                  <a className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
-                    Kontakt
-                  </a>
+                <Link href="/uslugi">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                    Usługi
+                  </button>
+                </Link>
+                <Link href="/dao">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                    DAO
+                  </button>
+                </Link>
+                <Link href="/blog">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                    Blog
+                  </button>
                 </Link>
               </div>
             </div>
