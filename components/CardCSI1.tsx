@@ -5,19 +5,19 @@ const CardCSI = () => {
   return (
     <div className="card-container">
       <div className="card">
-        <Link href="/site">
+        <Link href="/d_hack">
           <button className="card-button">
             <img src="/hak.png" alt="Hak Image" className="button-image" />
           </button>
         </Link>
       </div>
       <div className="card">
-        <Link href="/site">
+        <Link href="/d_konf">
           <button className="card-button">LublinAI: Konferencja Rozwoju Sztucznej Inteligencji</button>
         </Link>
       </div>
       <div className="card">
-        <Link href="/site">
+        <Link href="/d_bc">
           <button className="card-button">Bootcamp</button>
         </Link>
       </div>
