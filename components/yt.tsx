@@ -27,7 +27,8 @@ const YouTubeVideo = () => {
         alignItems: "center",
         width: "100%",
       }}
-    ></div>
+    >
+    </div>
   );
 };
 
