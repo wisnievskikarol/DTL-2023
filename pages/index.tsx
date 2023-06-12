@@ -10,7 +10,7 @@ import GridList from "@/components/grid-list/grid-list";
 import Contact from "@/components/contact";
 import Recruitment from "@/components/recruitment";
 import Footer from "@/components/footer";
-
+import YouTubeVideo from "@/components/yt";
 
 export default function Home() {
   return (
@@ -29,13 +29,10 @@ export default function Home() {
           },
         }}
       >
-        <div className={"py-8 md:py-64"}>
-          <motion.h1
-            className=" bg-gradient-to-br from-black to-#08fc9c  bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
-            variants={FADE_DOWN_ANIMATION_VARIANTS}
-          >
-            <Balancer>Niebieski ocean</Balancer>
-          </motion.h1>
+        <div className={"py-8"}>
+       
+          <YouTubeVideo />
+      
           <motion.p
             className="mt-6 text-center text-gray-500 md:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
@@ -56,4 +53,3 @@ export default function Home() {
     </>
   );
 }
-0

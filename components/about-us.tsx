@@ -15,19 +15,9 @@ const AboutUs = () => {
             deeptechlabs laboratorium zaawansowanych technologii zajmuje się
             zarządzaniem projektami, tworzeniem innowacji, oraz wprowadzaniem i
             budowaniem technologii, pozwalającej na automatyzację czy
-            optymalizację procesów w przedsiębiorstwach. Projekty, które
-            prowadzimy dla naszych klientów na dzień dzisiejszy sięgają prawie,
-            pół miliarda złotych. Opracowujemy również cykle badawcze oraz
+            optymalizację procesów w przedsiębiorstwach. Opracowujemy również cykle badawcze oraz
             projekt badań w takich dziedzinach jak:
           </p>
-          <ul className="my-4 ml-4 list-disc text-justify text-base font-normal leading-6 text-gray-500 ">
-            <li>Genetyka</li>
-            <li>Zootechnika i Rybactwo</li>
-            <li>Agrotechnika</li>
-            <li>Biologia Molekularna </li>
-            <li>Biochemia </li>
-            <li>Mykologia</li>
-          </ul>
           <p className="pt-2 text-justify text-base font-normal leading-6 text-gray-500 ">
             Narzędzia, protokoły, frameworki czy naukowców których udostępniamy
             naszym klientom, pozwalają nie tylko na szybkie tworzenie nowych
@@ -35,14 +25,14 @@ const AboutUs = () => {
             ustandaryzowane wytyczne co do optymalnego prowadzenia organizacji,
             zespołów czy projektów. Ponadto dzięki wykorzystaniu nowych
             technologii klienci otrzymują stabilne narzędzia i standardy prawne
-            oraz finansowe. Fraze DeepTech odnosi się do wykorzystania
+            oraz finansowe. Fraza DeepTech odnosi się do wykorzystania
             zaawansowanych i powstających technologii, takich jak sztuczna
-            inteligencja, blockchain, robotyka czy biotechnologia do
+            inteligencja, blockchain, robotyka, czy biotechnologia do
             rozwiązywania złożonych problemów oraz tworzenia nowych produktów i
             usług, które mają znaczący wpływ na różne branże. Technologie te
             umożliwiają na rozprzestrzenianie się innowacji i rozwój nowych
             rozwiązań, które mają potencjał do zakłócania istniejących rynków i
-            tworzenia nowych. Skontaktuj się z nami
+            tworzenia nowych. Skontaktuj się z nami!
           </p>
         </div>
       </div>

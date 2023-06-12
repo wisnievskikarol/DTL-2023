@@ -1,22 +1,24 @@
 import React from "react";
 import Link from "next/link";
 
-const Card = () => {
+const CardCSI = () => {
   return (
     <div className="card-container">
       <div className="card">
         <Link href="/site">
-          <button className="card-button">site</button>
+          <button className="card-button">
+            <img src="/hak.png" alt="Hak Image" className="button-image" />
+          </button>
         </Link>
       </div>
       <div className="card">
         <Link href="/site">
-          <button className="card-button">site</button>
+          <button className="card-button">LublinAI: Konferencja Rozwoju Sztucznej Inteligencji</button>
         </Link>
       </div>
       <div className="card">
         <Link href="/site">
-          <button className="card-button">site</button>
+          <button className="card-button">Bootcamp</button>
         </Link>
       </div>
       <style jsx>{`
@@ -26,7 +28,6 @@ const Card = () => {
           margin: 0 auto;
         }
         .card {
-          margin-top: 64px;
           flex: 1;
           height: 200px;
           border-radius: 8px;
@@ -49,9 +50,17 @@ const Card = () => {
           justify-content: center;
           cursor: pointer;
         }
+        .button-image {
+          width: 180px;
+          height: 180px;
+          transition: transform 0.5s;
+        }
+        .button-image:hover {
+          transform: rotate(360deg);
+        }
       `}</style>
     </div>
   );
 };
 
-export default Card;
+export default CardCSI;
