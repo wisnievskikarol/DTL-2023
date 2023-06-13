@@ -9,7 +9,7 @@ interface TopSectionProps {
 
 const TopSection: React.FC<TopSectionProps> = ({ leftContent, rightContent }) => {
   return (
-    <div style={{ display: "flex", width: "100%" }}>
+    <div style={{ display: "flex", width: "96%", justifyContent: "center", margin: "16px auto 0" }}>
       <div style={{ width: "58%", marginRight: "2%", border: "5px solid #08fc9c", backgroundColor: "black", padding: "16px", borderRadius: "8px" }}>
         <div className="text-center text-gray-500 md:text-xl">
           {leftContent}

@@ -6,7 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { data: session, status } = useSession();
-  const scrolled = useScroll(50);
+  const scrolled = useScroll();
 
   return (
     <nav
