@@ -11,7 +11,7 @@ const CardCSI = () => {
       </div>
       <div className="card">
         <Link href="/b_corpus">
-          <button className="card-button">Wysokiej jakości korpus polskich danych dla LLM'ów </button>
+          <button className="card-button">Wysokiej jakości korpus polskich danych dla LLM-ów </button>
         </Link>
       </div>
       <div className="card">
