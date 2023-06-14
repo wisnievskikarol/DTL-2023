@@ -6,6 +6,8 @@ import LeftSection from "@/components/Top2div";
 import ThreeSection from "@/components/Mid3div";
 
 export default function Home() {
+  const googleFormsUrl = 'https://docs.google.com/forms/d/1o_NE4BSQHW9slFZs7uQFpafcJa4Rs2OxA9a4bYqinAI/prefill';
+
   return (
     <>
       <motion.div
@@ -48,15 +50,19 @@ export default function Home() {
               <span style={{ color: 'grey' }}>Serdecznie zapraszamy do współpracy! Skontaktuj się z nami, aby dowiedzieć się więcej o opcjach sponsoringu i możliwościach partnerstwa.</span>
             </div>
           }
-          middleContent={
-            <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-              <span style={{ color: 'white', fontWeight: "bold" }}>Twój początek przygody z alchemią<br /><br /></span>
+           middleContent={
+            <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+              <span style={{ color: 'white', fontWeight: 'bold' }}>Twój początek przygody z alchemią<br /><br /></span>
               <span style={{ color: 'grey' }}>Zapisz się na naszą listę mailingową, aby otrzymać aktualizacje na temat nadchodzącego Hackathonu! Czeka Cię wydarzenie pełne innowacji i ekscytujących wyzwań programistycznych.</span>
+              <a href={googleFormsUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                <button style={{ width: '100%', padding: '8px', marginTop: '16px', color: 'black', border: '2px solid grey', borderRadius: '4px', backgroundColor: '#08fc9c' }}>
+                  Zapisz się na newsletter
+                </button>
+              </a>
             </div>
-
           }
           rightContent={
-           <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+            <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
               <span style={{ color: 'white', fontWeight: "bold" }}>PLACEHOLDER<br /><br /></span>
               <span style={{ color: 'grey' }}>Zapisz się na naszą listę mailingową, aby otrzymać aktualizacje na temat nadchodzącego Hackathonu! Czeka Cię wydarzenie pełne innowacji i ekscytujących wyzwań programistycznych.</span>
             </div> 
