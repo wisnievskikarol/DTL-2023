@@ -5,6 +5,7 @@ import GridList from "@/components/grid-list/grid-list";
 import Recruitment from "@/components/recruitment";
 import Footer from "@/components/footer";
 import YouTubeVideo from "@/components/YouTubeVideo";
+import AssistWindow from "@/components/AssistWindow";
 
 export default function Home() {
   return (
@@ -34,9 +35,15 @@ export default function Home() {
           </motion.p>
         </div>
         <AboutUs />
-        <div className="text-gray-500">
-          Tu mają być jakieś aktualności i może jakaś gra żeby poznać kim jesteś i co ma się w tym boxie wyświetlać - Ten box jest przeznaczony tylko dla ciebie - mapa strony?
-        </div>
+        <AssistWindow />
+       <div className="text-gray-500" style={{ marginTop: "4px", fontSize: "12px", textAlign: "center", width: "100%" }}>
+         <p>
+           Pracujemy nad Twoim personalnym asystentem! Dzięki wiedzy na Twój temat będzie pomagał Ci z nawigacją po stronie, co zaoszczędzi Ci czas i pokaże czego szukasz czego szukasz.
+         </p>
+         <p>
+          A nie jakieś SEO ;)
+         </p>
+       </div>
         <GridList />
         <Footer />
       </motion.div>

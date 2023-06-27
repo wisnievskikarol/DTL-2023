@@ -27,7 +27,7 @@ const AboutUs = () => {
           </p>
           <p className="text-center text-base font-normal leading-6 text-gray-500">
           <Link href="/onas">
-            <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+            <button className="cursor-pointer rounded-md px-3 py-2 text-lg font-medium text-white hover:text-green-400 ">
               ... więcej
             </button>
           </Link>
