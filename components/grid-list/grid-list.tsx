@@ -11,12 +11,12 @@ const GridList = () => {
       </h1>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
        <Card
-         title="Zarządzanie projektami"
+         title="Interdyscyplinarność"
          description="Zarządzanie projektami to proces planowania, organizowania, koordynowania i kontrolowania działań potrzebnych do osiągnięcia celów projektu. Usługa ta obejmuje m.in. tworzenie harmonogramów, alokację zasobów, zarządzanie ryzykiem oraz komunikację z zespołem i interesariuszami projektu. Zarządzanie projektami pomaga zapewnić terminowe i efektywne wdrożenie projektu, minimalizując ryzyko opóźnień, przekroczeń budżetu i innych problemów."
          image="11_t.png"
        />
        <Card
-         title="Wprowadzanie innowacji do przedsiębiorstw"
+         title="Wprowadzanie innowacji"
          description="Usługa polega na wsparciu firm w procesie wdrażania nowych pomysłów, technologii i procesów w celu poprawy efektywności działania oraz zwiększenia konkurencyjności na rynku. Usługa ta może obejmować analizę potrzeb i możliwości firmy, wybór odpowiednich rozwiązań, zaprojektowanie strategii wdrażania, szkolenia pracowników oraz monitorowanie wyników i dostosowywanie działań. Wprowadzanie innowacji może dotyczyć różnych obszarów działalności, takich jak produkcja, sprzedaż, marketing, czy zarządzanie."
          image="./9_t.png"
        />
