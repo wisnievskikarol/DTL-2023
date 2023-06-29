@@ -24,13 +24,13 @@ export default function Home() {
         }}
       >
         <div className="py-8">
-    {/*    <YouTubeVideo /> */}
+    <YouTubeVideo />
 
           <motion.p
             className="mt-6 text-center text-gray-500 md:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            Nasze technologie. Twoja przewaga.
+            Nasze technologie. Nasza przewaga. Nasza przyszłość.
           </motion.p>
         </div>
         <AboutUs />

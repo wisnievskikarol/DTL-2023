@@ -12,17 +12,17 @@ const GridList = () => {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
        <Card
          title="Interdyscyplinarność"
-         description="Zarządzanie projektami to proces planowania, organizowania, koordynowania i kontrolowania działań potrzebnych do osiągnięcia celów projektu. Usługa ta obejmuje m.in. tworzenie harmonogramów, alokację zasobów, zarządzanie ryzykiem oraz komunikację z zespołem i interesariuszami projektu. Zarządzanie projektami pomaga zapewnić terminowe i efektywne wdrożenie projektu, minimalizując ryzyko opóźnień, przekroczeń budżetu i innych problemów."
+         description="Specjalizujemy się w łączeniu różnorodnych technologii, wykorzystywaniu podejść badawczo-rozwojowych i fachowej wiedzy posiadanej przez zespół naszych specjalistów. Kładziemy silny nacisk na umiejętności cyfrowe i kompetencje umysłowe, aby tworzyć zaawansowane technologie, które przyczyniają się do rozwoju naszego cyfrowego społeczeństwa. Poprzez łączenie naszej wiedzy pochodzącej z różnych dziedzin, napędzamy innowacje i kształtujemy przyszłość technologii."
          image="11_t.png"
        />
        <Card
-         title="Wprowadzanie innowacji"
-         description="Usługa polega na wsparciu firm w procesie wdrażania nowych pomysłów, technologii i procesów w celu poprawy efektywności działania oraz zwiększenia konkurencyjności na rynku. Usługa ta może obejmować analizę potrzeb i możliwości firmy, wybór odpowiednich rozwiązań, zaprojektowanie strategii wdrażania, szkolenia pracowników oraz monitorowanie wyników i dostosowywanie działań. Wprowadzanie innowacji może dotyczyć różnych obszarów działalności, takich jak produkcja, sprzedaż, marketing, czy zarządzanie."
+         title="Wdrażanie innowacji"
+         description="Jesteśmy liderami innowacji. Nasze wyspecjalizowane zespoły ekspertów prowadzą wewnętrzne badania i opracowują nowe rozwiązania, aby być na czele światowej czołówki. Poprzez testowanie i udoskonalanie naszych innowacji zapewniamy im najwyższą skuteczność i stabilną jakość. Dajemy również możliwość dostępu do tych przełomowych rozwiązań naszym partnerom, umożliwiając im osiągnięcie własnego sukcesu dzięki wdrażaniu innowacji."
          image="./9_t.png"
        />
        <Card
          title="Planowanie strategiczne"
-         description=" Widzimy, że wiele firm, organizacji, a przedewszystkim nie planuje, nie myśli strategicznie -- Zastosowanie nowoczesnych technologii informatycznych i narzędzi do automatyzacji i optymalizacji kluczowych procesów biznesowych w firmie. Dzięki temu możliwe jest zwiększenie efektywności, redukcja kosztów oraz usprawnienie pracy zespołów. Automatyzacja i optymalizacja procesów pozwala na szybszą i bardziej precyzyjną realizację zadań, a także zapewnia lepszą kontrolę nad procesami biznesowymi. Usługa ta jest szczególnie ważna dla firm, które chcą pozostać konkurencyjne i rozwijać swoją działalność w dynamicznym środowisku biznesowym."
+         description="Skuteczne planowanie strategiczne umożliwia organizacjom przewidywanie i proaktywne podejmowanie działań w obliczu pojawiających się wyzwań, a także wykorzystywanie nadarzających się szans oraz zachowanie zwinności w szybko zmieniającym się środowisku biznesowym. Dzięki naszym specjalistycznym usługom spójność organizacyjną, łącząc interesariuszy i kluczowych decydentów w celu współpracy przy definiowaniu jasnej wizji, wyznaczaniu celów i ustalaniu konkretnych planów działania. Takie podejście oparte na współpracy napędza zaangażowanie, poczucie odpowiedzialności za kierunek strategiczny."
          image="/5_t.png"
        />
 

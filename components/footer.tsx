@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             <img src="/notion.png" alt="Social Link 3" width="25px" />
           </a>
         </div>
-        <p className="contact-text align-right text-gray-500">kontakt@deeptechlabs.pl</p>
+        <p className="contact-text align-right text-gray-500">kontakt(@)deeptechlabs(.)pl</p>
       </div>
       <div className="footer-section align-right text-gray-500">
        
