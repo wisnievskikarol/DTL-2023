@@ -82,7 +82,7 @@ export default function Home() {
             </p>
             <br />
             <p style={{ color: "white", fontWeight: "bold" }}>
-              centrumsi@deeptechlabs.pl
+              centrumsi(@)deeptechlabs.pl
             </p>
           </MarginDiv>
         </div>
