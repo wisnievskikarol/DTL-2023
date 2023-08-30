@@ -23,7 +23,7 @@ const Navbar = () => {
                   <img
                     src="logo.svg"
                     className="h-full"
-                    alt="Deeptechlabs Logo"
+                    alt="deeptechlabs Logo"
                   />
                 </button>
               </Link>

@@ -47,7 +47,7 @@ export default function Home() {
       description="Nasze szkolenia wprowadzające są stworzone specjalnie dla osób, które chcą zdobyć solidne podstawy i pewność w obszarze wybranych nowych technologii. Niezależnie od Twojego doświadczenia, nasze kursy pomogą Ci opanować kluczowe narzędzia i umiejętności."
     />
     <Card
-      name="Asystenci i automatyzacja" 
+      name="Asystenci i automatyzacja. Aplikowalna SI" 
       imageUrl="/23_t.png" 
       href="/strona_do_zrobienia" 
       description="Popraw efektywność swojej firmy dzięki usługom opierających się o AI! Nasi asystenci wyposażeni są w zaawansowane funkcje automatyzacji, przyspieszą procesy, zarządzą zadaniami oraz usprawnią komunikację. Skoncentruj się na rozwijaniu swojego biznesu, a nie na rutynowych czynnościach."

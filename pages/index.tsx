@@ -30,7 +30,7 @@ export default function Home() {
             className="mt-6 text-center text-gray-500 md:text-xl"
             variants={FADE_DOWN_ANIMATION_VARIANTS}
           >
-            Nasze technologie. Nasza przewaga. Nasza przyszłość.
+            Technologia napędzająca Twoją przyszłość.
           </motion.p>
         </div>
         <AboutUs />

@@ -16,12 +16,12 @@ const Dropdown = () => {
         </button>
         {!isOpen && (
           <div className={styles.carousel}>
-            <div>Zapomniałem co miałem tu wpisać - chyba jakąś informację o możliwości inwestycji</div>
+            <div>Wybierz projekt, który Cię interesuje...</div>
           </div>
         )}
         {isOpen && (
           <div className={styles.contentDivWhite}>
-            test
+            ...i wejdź w cyfrową ekonomię 4.0
           </div>
         )}
       </div>
