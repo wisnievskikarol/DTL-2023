@@ -33,6 +33,7 @@ useEffect(() => {
       style={{
         display: "flex",
         justifyContent: "center",
+        margin: 0,
         alignItems: "center",
         width: "100%",
       }}

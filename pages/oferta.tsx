@@ -1,14 +1,50 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import Card from "@/components/CardRev";
 import styles from './Home.module.css'; // Assuming this is the correct path
+import ImageComponent from '@/components/ImageComponent';
+import AirtableForm from '@/components/AirtableData';
 
+
+  function Spacer() {
+    return <div style={{ height: '80px' }}></div>;
+  }
 
 export default function Home() {
   return (
     <>
 
+    <ImageComponent src="/oferta2.png" alt="Oferta deeptechlabs, sztuczna inteligencja dla firm, czym jest sztuczna inteligencja" />
+    <ImageComponent src="/oferta3.png" alt="Oferta deeptechlabs, sztuczna inteligencja dla firm, czym jest sztuczna inteligencja" />
+    <ImageComponent src="/oferta4.png" alt="Oferta deeptechlabs, sztuczna inteligencja dla firm, czym jest sztuczna inteligencja" />
+    <ImageComponent src="/oferta5.png" alt="Oferta deeptechlabs, sztuczna inteligencja dla firm, czym jest sztuczna inteligencja" />
+
+    <Spacer />
+
+  <motion.p
+     className="mt-6 text-center text-gray-500 md:text-xl"
+     variants={FADE_DOWN_ANIMATION_VARIANTS}
+   >
+   Zamów naszą usługę
+   </motion.p>
+      <AirtableForm 
+          buttonLabels={['Skontaktujemy się z Tobą', 'Napisz do nas', 'Zadzwoń do nas']} 
+          displayTexts={['Skontaktujemy się z Tobą', 'Napisz do nas', 'Zadzwoń do nas']} 
+        />
+
+      <Spacer />
+
+
+
+  <motion.p
+     className="mt-6 text-center text-gray-500 md:text-xl"
+     variants={FADE_DOWN_ANIMATION_VARIANTS}
+   >
+   Nasze usługi
+   </motion.p>
     <div className={styles['cards-container']}> 
     <Card
       name="Prowadzenie prac B+R" 
