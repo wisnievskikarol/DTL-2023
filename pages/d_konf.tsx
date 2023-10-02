@@ -11,14 +11,17 @@ export default function Home() {
 
     <div className={styles['cards-container']}> 
       <MarginDiv>
-         <p> Pracujemy jeszcze nad tą stroną, zapraszamy wkótce.</p>
             <br />
             <br />
-          <p> Chcesz się z nami skontaktować pisz śmiało kontakt(@)deeptechlabs.pl </p>
             <br />
             <br />
-          <p> Jeśli chiałbyś/chciałabyś pracować nad stworzeniem tej strony napisz rekrutacja(@)deeptechlabs.pl </p>
-          <p> Wyślij nam swoje portfolio, napisz kim jesteś czym się interesujesz, jak widzisz siebie za rok, 5 lat i 10 lat</p>
+            <br />
+          <p> Chcesz się z nami skontaktować pisz śmiało centrumsi@deeptechlabs.pl </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
       </MarginDiv>
     </div>
 

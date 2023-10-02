@@ -21,7 +21,7 @@ const Navbar = () => {
               <Link href="/">
                 <button className="mr-3 h-9 sm:h-9 cursor-pointer focus:outline-none">
                   <img
-                    src="logo.svg"
+                    src="/logo.svg"
                     className="h-full"
                     alt="deeptechlabs Logo"
                   />
@@ -30,9 +30,9 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/lanchpad">
+                <Link href="/launchpad">
                   <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
-                    Lanchpad
+                    Launchpad
                   </button>
                 </Link>
                 <Link href="/centrumsi">

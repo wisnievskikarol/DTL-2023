@@ -8,6 +8,7 @@ import OneDivNoBorder from "@/components/OneDivNoBorder";
 import Link from "next/link";
 import ImageComponent from '@/components/ImageComponent';
 import AirtableData from '@/components/AirtableData';
+import ToLaunch from "@/components/ToLaunch";
 
 
 export default function Home() {
@@ -83,7 +84,7 @@ export default function Home() {
          {/* </p> */}
        {/* </div> */}
 
-
+        <ToLaunch />
         <GridList />
         <Footer />
       </motion.div>

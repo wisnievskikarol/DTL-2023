@@ -16,12 +16,12 @@ const Dropdown = () => {
         </button>
         {!isOpen && (
           <div className={styles.carousel}>
-            <div>Wybierz projekt, który Cię interesuje...</div>
+            <div>Budujemy świat krypto, stoimy na czele ekonomicznej rewolucji. Łączymy technologię blockchain i krypto z aktywami ze świata rzeczywistego! </div>
           </div>
         )}
         {isOpen && (
           <div className={styles.contentDivWhite}>
-            ...i wejdź w cyfrową ekonomię 4.0
+            Wybierz projekt który Cię interesuje i wejdź w cyfrową ekonomię 4.0
           </div>
         )}
       </div>

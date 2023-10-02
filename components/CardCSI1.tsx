@@ -13,7 +13,7 @@ const CardCSI = () => {
       </div>
       <div className="card">
         <Link href="/d_konf">
-          <button className="card-button">LublinAI: Konferencja Rozwoju Sztucznej Inteligencji</button>
+          <button className="card-button">Centrum Sztucznej Inteligencji</button>
         </Link>
       </div>
       <div className="card">

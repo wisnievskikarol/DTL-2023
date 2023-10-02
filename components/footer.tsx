@@ -26,13 +26,34 @@ const Footer: React.FC = () => {
             <img src="/notion.png" alt="Social Link 3" width="25px" />
           </a>
         </div>
-        <p className="contact-text align-right text-gray-500">kontakt(@)deeptechlabs(.)pl</p>
+        <p className="contact-text align-right text-gray-500">kontakt@deeptechlabs.pl</p>
       </div>
-      <div className="footer-section align-right text-gray-500">
-       
+      <div className="footer-section align-right text-gray-500 info-section">
+
+        
+          Pracujemy 24/7
+          <br />
+          Zapraszamy do kontaktu
+          <br />
+          Mob. +48 500 387 792
+          <br />
+          kontakt@deeptechlabs.pl
+          <br />
+          Dołącz do nas i buduj przyszłość
+          <br />
+          Polskiej nauki i technologii
+          <br />
+          60% przeznaczonych jest na młodych naukowców
+        
       </div>
-      <div className="footer-section align-right text-gray-300">
-         
+      <div className="footer-section align-right text-gray-500 info-section">
+           OORGANIZACJA deeptechlabs - LABORATORIUM ZAAWANSOWANYCH TECHNOLOGII JEST PARTNEREM FIRMY GLOBERGY SP. Z O. O.
+           <br />
+           NIP: 5170413324
+           <br />
+           KRS: 0000881725
+           <br />
+           REGON: 388067029
       </div>
       <div className="footer-section align-right text-gray-300">
         <ul>
@@ -52,6 +73,11 @@ const Footer: React.FC = () => {
         .footer-section {
           width: 25%;
           padding: 5px;
+        }
+
+        .info-section {
+          font-size: 0.9rem;  // Adjust font size as per requirement
+          color: #818181;     // A grey-ish color, adjust as per requirement
         }
 
         .align-right {

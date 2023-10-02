@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const AIRTABLE_ENDPOINT = 'https://api.airtable.com/v0/appIlVPr2xDeAuEy1/tblD1SYGDy8ChNg29';
-const AIRTABLE_API_KEY = 'pat8x3Gi4AVrI1ZOW.b7845d961836183e235718e879f5ba2264a452055676a6c8a6df839296af0d12';
+const NEXT_PUBLIC_ENDPOINT = 'https://api.airtable.com/v0/appIlVPr2xDeAuEy1/tblD1SYGDy8ChNg29';
+const AIRTABLE_API_KEY = process.env.NEXT_PUBLIC_KEY;
+console.log("API Key:", AIRTABLE_API_KEY);
+
 
 interface ButtonProps {
     buttonLabels: string[];
@@ -51,7 +53,7 @@ const AirtableForm: React.FC<ButtonProps> = ({ buttonLabels, displayTexts }) => 
 
     const submitToAirtable = async (data: any) => {
             try {
-                const response = await axios.post(AIRTABLE_ENDPOINT, {
+                const response = await axios.post(NEXT_PUBLIC_ENDPOINT, {
                     fields: data
                 }, {
                     headers: {

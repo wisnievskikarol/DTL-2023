@@ -2,7 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import Card from "@/components/CardRev";
-import styles from './Home.module.css'; // Assuming this is the correct path
+import CardBlank from "@/components/CardRevBlank";
+import styles from './Home.module.css';
 import Dropdown from '@/components/Dropdown';
 
 export default function Home() {
@@ -14,22 +15,22 @@ export default function Home() {
         <Card
           name="Budujemy technologię jutra" 
           imageUrl="/logo.svg" 
-          href="/projects/currency"
+          href="/projects/dtl"
           description="Jesteśmy pionierami w dziedzinie technologii, łączymy zaawansowane badania i praktyczne potrzeby. Pracujemy na styku inżynierii, nauk ścisłych oraz społeczno-ekonomicznych, dążąc do tworzenia rozwiązań, które napędzają postęp i przynoszą korzyści ludzkości."
         />
         <Card
           name="Dopasowujemy SI dla każdego" 
           imageUrl="/ragi.png" 
-          href="/projects/currency"
+          href="/projects/ragi"
           description="Specjalizujemy się w badaniach i rozwoju w dziedzinie sztucznej inteligencji, kreujemy przyszłość technologiczną dla przedsiębiorstw i konsumentów. Wykorzystując najświeższe technologie dostępne na rynku, tworzymy rozwiązania B2X."
         />
-        <Card
+        <CardBlank
           name="Twój event w technologii Web3" 
           imageUrl="/napotege.png" 
           href="/projects/currency"
           description="NaPotęgę jest miejscem, gdzie profesjonaliści z branży spotykają się, aby dzielić się wiedzą, doświadczeniami i nawiązywać nowe kontakty. Ułatwiamy dostęp oraz przyśpieszamy adopcję Web3."
         />
-        <Card
+        <CardBlank
           name="Czas to najcenniejszy skarb" 
           imageUrl="/fte.png" 
           href="/projects/currency"
@@ -37,19 +38,19 @@ export default function Home() {
         />
       </div>
       <div className={styles['cards-container']}>
-        <Card
+        <CardBlank
           name="Globalny system lokalnych walut" 
           imageUrl="/FUNDchain.png" 
           href="/projects/currency"
           description="Startup chce zdobyć kapitał na rozwój nowej aplikacji, a może chcesz wprowadzić usługę typu sharing economy. Za pośrednictwem FUNDchain zaprezentujesz swój projekt, a inwestorzy indywidualni będą mogli wspierać Twój projekt w zamian za udział w zyskach."
         />
-        <Card
+        <CardBlank
           name="IoT & AI: Polski Lider Rewolucji 4.0!" 
           imageUrl="/LUMINEK.png" 
           href="/projects/currency"
           description="Jesteśmy wiodącą firmą technologiczną łączącą rozwiązania IoT i SI w Polsce. Wewnątrz naszej organizacji pracujemy nad wieloma wyzwaniami związanymi z Rewolucją Przemysową 4.0. Tworzenienie technologii, która jest użyteczna, łatwa w użyciu, a przede wszystkim etyczna."
         />
-        <Card
+        <CardBlank
           name="Mniej wody, ziemi - więcej żywności" 
           imageUrl="/verti.png" 
           href="/projects/currency"
@@ -58,7 +59,7 @@ export default function Home() {
         <Card
           name="Tu może być Twój projekt" 
           imageUrl="/10_t.png" 
-          href="/projects/currency"
+          href="/launchpad"
           description="Masz innowacyjny projekt gotowy do prezentacji światu? Zgłoś się do nas! Oferujemy akcelerację startupu oraz możliwość listowania na naszej giełdzie. Nie czekaj - przekształć wizję w rzeczywistość! 🚀"
         />
       </div>
