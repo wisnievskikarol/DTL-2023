@@ -70,7 +70,7 @@ const AirtableForm: React.FC<ButtonProps> = ({ buttonLabels, displayTexts }) => 
     const fontSize = '16px'; 
 
    return (
-    <div style={{ width: '96%', margin: '0 auto' }}>
+    <div style={{ width: '96vw', margin: '0 auto' }}>
       <div style={{ 
         display: 'flex', 
         flexDirection: 'column', 

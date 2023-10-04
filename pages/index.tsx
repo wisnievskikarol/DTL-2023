@@ -13,7 +13,7 @@ import ToLaunch from "@/components/ToLaunch";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -29,7 +29,7 @@ export default function Home() {
         }}
       >
 
-        <div className="py-8">
+        <div className="py-8 flex flex-col">
           <YouTubeVideo />
           <motion.p
             className="mt-6 text-center text-gray-500 md:text-xl"
@@ -88,6 +88,6 @@ export default function Home() {
         <GridList />
         <Footer />
       </motion.div>
-    </>
+    </div>
   );
 }
