@@ -11,6 +11,7 @@
 
 .topContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch; /* Update this line */
   padding: 20px;
@@ -19,8 +20,19 @@
   border: 1px solid #05ff9a;
   color: #05ff9a;
   width: 96%;
+  min-width: 240px;
 
 }
+
+
+@media (max-width: 900px) {
+
+  .topContainer > div:first-child {
+    flex-basis: 100%;
+  }
+
+}
+
 
 .subContainer {
   flex: 1;
@@ -32,6 +44,7 @@
   justify-content: center;
   align-items: center;
   height: 340px;
+  min-width: 200px;
   align-self: stretch; 
 }
 
@@ -39,12 +52,23 @@
 .image {
   max-width: 100%;
   height: auto;
+  max-height: 340px;
   border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+
+  .image {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
 }
 
 .dataColor {
   color: #05ff9a;
-  margin: 5px 0; /* Optionally, you can add some margin for better spacing */
+  margin: 5px 0; 
+  margin-left: 15px;/* Optionally, you can add some margin for better spacing */
 }
 
 .dataContainer {
@@ -53,12 +77,28 @@
   width: 100%;
   margin-bottom: 5px;
   position: relative;
+  gap: 10px;
 }
 
 .answerColor {
   color: white;
+  text-align: right;
   margin: 5px 0; /* Optionally, you can add some margin for better spacing */
 }
+
+@media (max-width: 868px) {
+
+  .dataContainer {
+    flex-direction: column;
+  }
+
+  .answerColor {
+    text-align: left;
+  }
+
+}
+
+
 
 .bottomContainer {
   display: flex;           /* Use flexbox */

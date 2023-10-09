@@ -37,6 +37,10 @@ export default function Home() {
         How to Get Ahead of 99% of People | Exponential Organizations 2.0
         </a>
 
+        <a href="https://www.youtube.com/watch?v=SpaufNLj_aM" className={styles.glowText_x} target="_blank" rel="noopener noreferrer">
+        Tomasz Wróblewski: Dlaczego Europa jest mniej innowacyjna od USA?Jak Polska może wykorzystać szansę?
+        </a>
+
       </div>
 
       <Footer />

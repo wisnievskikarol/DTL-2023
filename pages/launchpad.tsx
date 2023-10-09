@@ -5,11 +5,13 @@ import Card from "@/components/CardRev";
 import CardBlank from "@/components/CardRevBlank";
 import styles from './Home.module.css';
 import Dropdown from '@/components/Dropdown';
+import Test from '@/components/Test';
 
 export default function Home() {
   return (
     <>
     <div className={styles.container}>
+      <Test />
      <Dropdown />
       <div className={styles['cards-container']}>
         <Card
