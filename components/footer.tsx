@@ -66,13 +66,15 @@ const Footer: React.FC = () => {
       <style jsx>{`
         .footer-container {
           display: flex;
-          width: 96%;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100vw;
           padding: 2%;
         }
 
         .footer-section {
           width: 25%;
-          padding: 5px;
+          padding: 15px;
         }
 
         .info-section {
@@ -81,7 +83,7 @@ const Footer: React.FC = () => {
         }
 
         .align-right {
-          text-align: right;
+          text-align: left;
         }
 
         .social-media-links {
@@ -102,6 +104,14 @@ const Footer: React.FC = () => {
           margin-top: 30px;
           text-align: left;
           color: gray-500;
+        }
+
+        @media (max-width: 768px) {
+
+          .footer-section {
+            width: 50%;
+          }
+
         }
       `}</style>
     </div>
