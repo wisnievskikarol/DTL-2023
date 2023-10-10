@@ -51,8 +51,18 @@ const AirtableForm: React.FC<ButtonProps> = ({ buttonLabels, displayTexts }) => 
       });
   };
 
-    const submitToAirtable = async (data: any) => {
+    const submitToAirtable = async (e) => {
 
+      const dataToSend = {
+      fields: {
+        Imie: formData.Imie,
+        Nazwisko: formData.Nazwisko,
+        Email: formData.Email,
+        Numer_tel: formData.Numer_tel,
+        Wiadomosc_do_nas: formData.Wiadomosc_do_nas,
+      },
+    };
+      console.log(formData);
       try {
       // Make a POST request to Airtable
       const response = await fetch('/api/sendDataToAirTable', {
@@ -60,8 +70,13 @@ const AirtableForm: React.FC<ButtonProps> = ({ buttonLabels, displayTexts }) => 
         headers: {
           'Content-Type': 'application/json',
         },
-        fields: JSON.stringify(data),
+        body: JSON.stringify(dataToSend),
       });
+      setFormData({Imie: '',
+        Nazwisko: '',
+        Email: '',
+        Numer_tel: '',
+        Wiadomosc_do_nas: ''});
       } catch (error) {
       console.error('Error sending data:', error);
     };

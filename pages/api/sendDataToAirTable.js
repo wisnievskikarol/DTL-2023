@@ -2,10 +2,12 @@ import axios from 'axios';
 
 export default async (req, res) => {
   if (req.method === 'POST') {
+
     try {
       const { data } = await axios.post(
         process.env.AIRTABLE_ENDPOINT,
-        req.fields,
+        req.body,
+
         {
           headers: {
             Authorization: `Bearer ${process.env.AIRTABLE_API_KEY}`,

@@ -6,10 +6,29 @@ import CardBlank from "@/components/CardRevBlank";
 import styles from './Home.module.css';
 import Dropdown from '@/components/Dropdown';
 import Test from '@/components/Test';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <>
+    <Head>
+        <title>Launchpad</title>
+        <link rel="icon" href="/faviconSmallSize.png" type="image/x-icon" />
+        <meta charset="UTF-8" />
+        <meta name="description" content="Deeptechlabs, technology driving your future" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Deeptechlabs" />
+        <meta name="keywords" content="future, crypto, blockchain, technology, innovation, AI, artificial intelligence" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Title for Sharing" />
+        <meta property="og:description" content="Deeptechlabs, technology driving your future" />
+        <meta property="og:image" content="/logo.svg" />
+        <meta property="og:url" content="https://www.deeptechlabs.pl" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Deeptechlabs" />
+        <meta name="twitter:description" content="Technology driving your future" />
+        <meta name="twitter:image" content="/logo.svg" />
+      </Head>
     <div className={styles.container}>
       <Test />
      <Dropdown />
