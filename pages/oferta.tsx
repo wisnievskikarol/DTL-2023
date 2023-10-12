@@ -7,6 +7,7 @@ import Card from "@/components/CardRev";
 import styles from './Home.module.css'; // Assuming this is the correct path
 import ImageComponent from '@/components/ImageComponent';
 import AirtableForm from '@/components/AirtableData';
+import Head from 'next/head';
 
 
   function Spacer() {
@@ -16,6 +17,24 @@ import AirtableForm from '@/components/AirtableData';
 export default function Home() {
   return (
     <>
+    <Head>
+        <title>Oferta</title>
+        <link rel="icon" href="/faviconSmallSize.png" type="image/x-icon" />
+        <meta charset="UTF-8" />
+        <meta name="description" content="Deeptechlabs, technology driving your future" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Deeptechlabs" />
+        <meta name="keywords" content="future, crypto, blockchain, technology, innovation, AI, artificial intelligence" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Title for Sharing" />
+        <meta property="og:description" content="Deeptechlabs, technology driving your future" />
+        <meta property="og:image" content="/logo.svg" />
+        <meta property="og:url" content="https://www.deeptechlabs.pl" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Deeptechlabs" />
+        <meta name="twitter:description" content="Technology driving your future" />
+        <meta name="twitter:image" content="/logo.svg" />
+      </Head>
 
     <ImageComponent src="/oferta2.png" alt="Oferta deeptechlabs, sztuczna inteligencja dla firm, czym jest sztuczna inteligencja" />
     <ImageComponent src="/oferta3.png" alt="Oferta deeptechlabs, sztuczna inteligencja dla firm, czym jest sztuczna inteligencja" />
