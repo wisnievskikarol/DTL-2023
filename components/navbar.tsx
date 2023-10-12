@@ -1,14 +1,22 @@
-// import Link from "next/link";
 import { useState } from "react";
 import { useSession } from "next-auth/react";
 import { useScroll } from "framer-motion";
-// @ts-ignore
-import { Link } from "react-scroll";
+import Link from "next/link";
+import styles from "../styles/navbar.module.css";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { data: session, status } = useSession();
-  // @ts-ignore
-  const scrolled = useScroll(50);
+  const scrolled = useScroll();
+
+  const menuStyles = {
+    transform: isOpen ? 'translateY(0%)' : 'translateY(100%)',
+    opacity: isOpen ? 1 : 0,
+    transition: 'transform 0.3s ease',
+  };
+
+
+
   return (
     <nav
       className={`fixed top-0 w-full  ${
@@ -19,45 +27,42 @@ const Navbar = () => {
         <div className="flex h-16 w-full items-center justify-between">
           <div className="flex w-full items-center justify-between">
             <div className="flex-shrink-0">
-              <img
-                src="logo.svg"
-                className="mr-3 h-9 sm:h-9"
-                alt="Deeptechlabs Logo"
-              />
+              <Link href="/">
+                <button className="mr-3 h-9 sm:h-9 cursor-pointer focus:outline-none">
+                  <img
+                    src="/logo.svg"
+                    className="h-full"
+                    alt="deeptechlabs Logo"
+                  />
+                </button>
+              </Link>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link
-                  to="Onas"
-                  smooth={true}
-                  offset={-70}
-                  className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white"
-                >
-                  O nas
+                <Link href="/launchpad">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                    Launchpad
+                  </button>
                 </Link>
-                <Link
-                  to="Uslugi"
-                  smooth={true}
-                  offset={-70}
-                  className=" cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white"
-                >
-                  Usługi
+                <Link href="/centrumsi">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                    Centrum SI
+                  </button>
                 </Link>
-                <Link
-                  to="Rekrutacja"
-                  smooth={true}
-                  offset={-70}
-                  className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white"
-                >
-                  Rekrutacja
+                <Link href="/oferta">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                    Oferta
+                  </button>
                 </Link>
-                <Link
-                  to="Kontakt"
-                  smooth={true}
-                  offset={-70}
-                  className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white"
-                >
-                  Kontakt
+                <Link href="/dao">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                    DAO
+                  </button>
+                </Link>
+                <Link href="/blog">
+                  <button className="cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                    Blog
+                  </button>
                 </Link>
               </div>
             </div>
@@ -70,81 +75,36 @@ const Navbar = () => {
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
-              <span className="sr-only">Open main menu</span>
-              {isOpen ? (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
+              <img
+                src="/menuIconWhite.png"
+                className="h-full"
+                alt="menuIcon"
+              />
             </button>
           </div>
         </div>
       </div>
-
-      <div className={isOpen ? "z-30 block" : "z-40 hidden"} id="mobile-menu">
-        <div className="z-30 space-y-1 bg-black/50 px-2 pt-2 pb-3 backdrop-blur-xl sm:px-3">
-          <Link
-            to="Onas"
-            smooth={true}
-            offset={-70}
-            className=" block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white"
-          >
-            O nas
-          </Link>
-          <Link
-            to="Uslugi"
-            smooth={true}
-            offset={-70}
-            className="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white"
-          >
-            Usługi
-          </Link>
-          <Link
-            to="Rekrutacja"
-            smooth={true}
-            offset={-70}
-            className=" block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white"
-          >
-            Rekrutacja
-          </Link>
-          <Link
-            to="Kontakt"
-            smooth={true}
-            offset={-70}
-            className=" block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white"
-          >
-            Kontakt
-          </Link>
+      {isOpen && (
+        <div className="md:hidden mt-2 text-center" style={menuStyles}>
+          <div className="flex flex-col items-center">
+            <button className="text-white py-2 text-gray-300 hover:text-white">
+              <a href="/launchpad">Launchpad</a>
+            </button>
+            <button className="text-white py-2 text-gray-300 hover:text-white">
+              <a href="/centrumsi" className="block text-white py-2 text-gray-300 hover:text-white">Centrum SI</a>
+            </button>
+            <button className="text-white py-2 text-gray-300 hover:text-white">
+              <a href="/oferta" className="block text-white py-2 text-gray-300 hover:text-white">Oferta</a>
+            </button>
+            <button className="text-white py-2 text-gray-300 hover:text-white">
+              <a href="/dao" className="block text-white py-2 text-gray-300 hover:text-white">DAO</a>
+            </button>
+            <button className="text-white py-2 text-gray-300 hover:text-white">
+              <a href="/blog" className="block text-white py-2 text-gray-300 hover:text-white">Blog</a>
+            </button>
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };
