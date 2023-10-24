@@ -10,11 +10,13 @@ import ImageComponent from '@/components/ImageComponent';
 import AirtableData from '@/components/AirtableData';
 import ToLaunch from "@/components/ToLaunch";
 import Head from 'next/head';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 
 export default function Home() {
   return (
     <div>
+
       <Head>
         <title>deeptechlabs</title>
         <link rel="icon" href="/faviconSmallSize.png" type="image/x-icon" />
@@ -33,6 +35,7 @@ export default function Home() {
         <meta name="twitter:description" content="Technology driving your future" />
         <meta name="twitter:image" content="/logo.svg" />
       </Head>
+      <GoogleAnalytics />
       <motion.div
         initial="hidden"
         whileInView="show"

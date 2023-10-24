@@ -8,6 +8,7 @@ import styles from './Home.module.css'; // Assuming this is the correct path
 import ImageComponent from '@/components/ImageComponent';
 import AirtableForm from '@/components/AirtableData';
 import Head from 'next/head';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 
   function Spacer() {
@@ -35,6 +36,7 @@ export default function Home() {
         <meta name="twitter:description" content="Technology driving your future" />
         <meta name="twitter:image" content="/logo.svg" />
       </Head>
+      <GoogleAnalytics />
 
     <ImageComponent src="/oferta2.png" alt="Oferta deeptechlabs, sztuczna inteligencja dla firm, czym jest sztuczna inteligencja" />
     <ImageComponent src="/oferta3.png" alt="Oferta deeptechlabs, sztuczna inteligencja dla firm, czym jest sztuczna inteligencja" />

@@ -7,6 +7,8 @@ import styles from './Home.module.css';
 import Dropdown from '@/components/Dropdown';
 import Test from '@/components/Test';
 import Head from 'next/head';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+
 
 export default function Home() {
   return (
@@ -29,6 +31,7 @@ export default function Home() {
         <meta name="twitter:description" content="Technology driving your future" />
         <meta name="twitter:image" content="/logo.svg" />
       </Head>
+      <GoogleAnalytics />
     <div className={styles.container}>
       <Test />
      <Dropdown />

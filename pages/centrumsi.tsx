@@ -6,6 +6,8 @@ import CardCSI1 from "@/components/CardCSI1";
 import CardCSI2 from "@/components/CardCSI2";
 import OscillatingLine from "@/components/SepLine";
 import Head from 'next/head';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+
 // import Carousel from "@/components/CarouselCSI";
 
 {/*
@@ -51,6 +53,7 @@ export default function Home() {
         <meta name="twitter:description" content="Technology driving your future" />
         <meta name="twitter:image" content="/logo.svg" />
       </Head>
+      <GoogleAnalytics />
       <motion.div
         initial="hidden"
         whileInView="show"
