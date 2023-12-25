@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import styles from './DiscussSection.module.css';
 
+interface Dropdownv2Props {
+	title: string;
+	description: string;
+  }
 
-const Dropdownv2 = ({title, description}) => {
+
+const Dropdownv2: React.FC<Dropdownv2Props> = ({title, description}) => {
 
 	const [isClicked, setIsClicked] = useState(false);
 
@@ -30,3 +35,4 @@ const Dropdownv2 = ({title, description}) => {
 }
 
 export default Dropdownv2;
+

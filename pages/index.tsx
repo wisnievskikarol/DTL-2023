@@ -20,7 +20,7 @@ export default function Home() {
       <Head>
         <title>deeptechlabs</title>
         <link rel="icon" href="/faviconSmallSize.png" type="image/x-icon" />
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="description" content="Deeptechlabs, technology driving your future" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Deeptechlabs" />

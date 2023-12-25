@@ -51,7 +51,7 @@ const AirtableForm: React.FC<ButtonProps> = ({ buttonLabels, displayTexts }) => 
       });
   };
 
-    const submitToAirtable = async (e) => {
+    const submitToAirtable = async (e:any) => {
 
       const dataToSend = {
       fields: {

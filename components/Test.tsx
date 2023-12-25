@@ -1,9 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { getProjectDataFromAirtable } from '../api/airtable';
 
+// Update the interface to match the actual data structure
+interface ProjectData {
+  fields: {
+    Name: string;
+    Description: string; // Updated field name
+    URL: string; // Updated field name
+  };
+}
+
 const Test = () => {
-  const [projectData, setProjectData] = useState(null);
-  const [error, setError] = useState(null);
+  // Initialize projectData with a type of ProjectData | null
+  const [projectData, setProjectData] = useState<ProjectData | null>(null);
+  const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -12,15 +22,12 @@ const Test = () => {
         setProjectData(data);
       } catch (error) {
         console.error("Error fetching data: ", error);
-        setError(error);
-        // Handle error appropriately in your app
+        setError(error instanceof Error ? error : new Error('An error occurred'));
       }
     };
 
     fetchData();
   }, []);
-
-  // Render logic based on fetched data can go here...
 
   if (error) {
     return <p>Error loading data</p>;
@@ -33,8 +40,8 @@ const Test = () => {
   return (
     <div>
       <h1>{projectData.fields.Name}</h1>
-      <p>{projectData.fields.Opis}</p>
-      <a href={projectData.fields['Strona (URL)']} target="_blank" rel="noopener noreferrer">
+      <p>{projectData.fields.Description}</p>
+      <a href={projectData.fields.URL} target="_blank" rel="noopener noreferrer">
         Visit Project Website
       </a>
     </div>

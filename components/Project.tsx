@@ -33,7 +33,7 @@ const StackedContainers: React.FC = () => {
 
   const [selectedTask, setSelectedTask] = useState(0);
 
-  const handleTaskClick = (index) => {
+  const handleTaskClick = (index: number) => {
     setSelectedTask(index);
   };
 
@@ -141,7 +141,7 @@ const StackedContainers: React.FC = () => {
               <p className={styles.subtitle}>Opis zadania:</p>
               <p className={styles.content}>Celem tego zadania jest stworzenie nowoczesnego, intuicyjnego i responsywnego interfejsu użytkownika dla panelu administratora, który pozwoli na efektywną komunikację z wbudowanym asystentem AI.</p>
               <p className={styles.subtitle}>Szczegółowe wymagania</p>
-              <Dropdownv2 title='Title' description='Description' />
+              <Dropdownv2 title="Title" description="Description" />
               <p className={styles.subtitle}>Wybierz rodzaj rozliczenia</p>
               <div className={styles.settlement}>
                 <div className={styles.settleBox}>
@@ -159,7 +159,7 @@ const StackedContainers: React.FC = () => {
                   <p className={styles.boxContent}>520 DTL</p>
                 </div>
               </div>
-              <DiscussSection />
+              <DiscussSection title="Title" description="Description" />
             </div> 
           </div>
         </div>
