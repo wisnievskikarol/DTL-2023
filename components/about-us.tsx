@@ -1,61 +1,46 @@
 import React from "react";
+import Link from "next/link";
+import OneDivNoBorder from "@/components/OneDivNoBorder";
 
 const AboutUs = () => {
   return (
     <div
-      id={"Onas"}
-      className=" pt-9 md:py-12 md:px-6 lg:py-16 lg:px-20 2xl:container 2xl:mx-auto"
+      id="Onas"
+      className="pt-9 md:py-12 md:px-6 lg:py-16 lg:px-20 2xl:container 2xl:mx-auto"
     >
-      <div className="flex flex-col justify-between  lg:flex-row">
+
+    <OneDivNoBorder content= "Odkryj moc innowacji z nami i daj skrzydeł młodym talentom! Wybierając naszą usługę, nie tylko korzystasz z najnowszych rozwiązań technologicznych, ale również inwestujesz w przyszłość. Aż 40% naszych zysków przeznaczamy na realizację ambitnych projektów start-upowych prowadzonych przez młodych naukowców." />
+    <OneDivNoBorder content= "Nie jesteśmy zwykłą firmą – jesteśmy mostem łączącym dzisiejsze potrzeby z jutrzejszymi rozwiązaniami. Współpracując z nami, stajesz się częścią dynamicznej społeczności, która wierzy w siłę nauki i innowacji jako narzędzia do zmiany świata na lepsze." />
+    <OneDivNoBorder content= "Zapewniamy nie tylko najwyższą jakość usług, ale także transparentność i odpowiedzialność społeczną. Dlatego, jeśli chcesz, żeby Twoje pieniądze pracowały nie tylko dla Ciebie, ale i dla przyszłych pokoleń – jesteśmy najlepszym wyborem." />
+    <OneDivNoBorder content= "Dołącz do nas i razem zainwestujmy w przyszłość pełną innowacji i możliwości. Nie czekaj, czas działać już teraz!" />
+    
+
+      <div className="flex flex-col justify-between lg:flex-row">
         <div className="lg:w-12/12 flex w-full flex-col justify-center px-4 sm:px-0">
-          <h1 className="pb-4 text-3xl font-bold leading-9 text-gray-100 sm:pb-16 lg:text-4xl">
-            Kim jesteśmy?
-          </h1>
-          <p className="text-justify text-base font-normal leading-6 text-gray-500 ">
-            deeptechlabs laboratorium zaawansowanych technologii zajmuje się
-            zarządzaniem projektami, tworzeniem innowacji, oraz wprowadzaniem i
-            budowaniem technologii, pozwalającej na automatyzację czy
-            optymalizację procesów w przedsiębiorstwach. Projekty, które
-            prowadzimy dla naszych klientów na dzień dzisiejszy sięgają prawie,
-            pół miliarda złotych. Opracowujemy również cykle badawcze oraz
-            projekt badań w takich dziedzinach jak:
-          </p>
-          <ul className="my-4 ml-4 list-disc text-justify text-base font-normal leading-6 text-gray-500 ">
-            <li>Genetyka</li>
-            <li>Zootechnika i Rybactwo</li>
-            <li>Agrotechnika</li>
-            <li>Biologia Molekularna </li>
-            <li>Biochemia </li>
-            <li>Mykologia</li>
-          </ul>
-          <p className="pt-2 text-justify text-base font-normal leading-6 text-gray-500 ">
-            Narzędzia, protokoły, frameworki czy naukowców których udostępniamy
-            naszym klientom, pozwalają nie tylko na szybkie tworzenie nowych
-            produktów i usług, ale również dają projektom skrojone
-            ustandaryzowane wytyczne co do optymalnego prowadzenia organizacji,
-            zespołów czy projektów. Ponadto dzięki wykorzystaniu nowych
-            technologii klienci otrzymują stabilne narzędzia i standardy prawne
-            oraz finansowe. Fraze DeepTech odnosi się do wykorzystania
-            zaawansowanych i powstających technologii, takich jak sztuczna
-            inteligencja, blockchain, robotyka czy biotechnologia do
-            rozwiązywania złożonych problemów oraz tworzenia nowych produktów i
-            usług, które mają znaczący wpływ na różne branże. Technologie te
-            umożliwiają na rozprzestrzenianie się innowacji i rozwój nowych
-            rozwiązań, które mają potencjał do zakłócania istniejących rynków i
-            tworzenia nowych. Skontaktuj się z nami
+          <p className="text-center text-base font-normal leading-6 text-gray-500">
+            <span className="text-white">deeptechlabs</span>, czyli laboratorium zaawansowanych technologii zajmujemy się:
+            <br />
+            <img src="/favicon.png" alt="Favicon" className="inline-block w-3 h-4" /> zarządzaniem projektami,
+            <br />
+            <img src="/favicon.png" alt="Favicon" className="inline-block w-3 h-4" /> doradztwem strategicznym,
+            <br />
+            <img src="/favicon.png" alt="Favicon" className="inline-block w-3 h-4" /> prowadzeniem prac badawczo-rozwojowych, tworzeniem innowacji oraz tworzeniem nauki,
+            <br />
+            <img src="/favicon.png" alt="Favicon" className="inline-block w-3 h-4" /> wprowadzaniem i budowaniem technologii,
+            <br />
+            <img src="/favicon.png" alt="Favicon" className="inline-block w-3 h-4" /> świadczeniem usług typu think tank,
+            <br />
+            <img src="/favicon.png" alt="Favicon" className="inline-block w-3 h-4" /> prowadzeniem szkoleń z zakresu wykorzystywania i implementacji technologii w społecznościach.
+            <br />
           </p>
         </div>
       </div>
-
-      <div className="flex flex-col justify-between   lg:flex-row">
-        <div className="flex w-full flex-col justify-center px-4 sm:px-0 lg:w-full">
-          {/*<h1 className="pb-4 text-3xl font-bold leading-9 text-gray-800 lg:text-4xl">*/}
-          {/*  Our Story*/}
-          {/*</h1>*/}
-        </div>
+      <div className="flex flex-col justify-between lg:flex-row">
+        <div className="flex w-full flex-col justify-center px-4 sm:px-0 lg:w-full"></div>
       </div>
     </div>
   );
 };
 
 export default AboutUs;
+
